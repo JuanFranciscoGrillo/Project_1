@@ -13,7 +13,8 @@ body {
 }
 
 /* Styling for container elements */
-.container, .container-fluid {
+.container,
+.container-fluid {
     height: 60px;
     font-weight: bold;
     margin-bottom: 20px;
@@ -28,7 +29,8 @@ h1 {
 }
 
 /* Styling for the input field and form container */
-.inputfield, form {
+.inputfield,
+form {
     width: 90%;
     max-width: 600px;
     margin: auto;
