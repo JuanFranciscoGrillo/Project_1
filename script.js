@@ -1,3 +1,7 @@
+const home = document.getElementById('Home');
+const form = document.querySelector('form');
+const homebtn = document.getElementById('homebtn')
+const search = document.getElementById("nav-button");
 const searchForm = document.getElementById('search-form');
 const searchResult = document.getElementById('search-result');
 const searchBox = document.getElementById('search-box');
@@ -43,3 +47,33 @@ showMore.addEventListener('click',()=>{
   page++
   searchImages()
 })
+
+search.addEventListener('click',()=>{
+ 
+  home.style.display='none'
+  form.style.display='flex'
+  searchResult.style.display='grid'
+  
+})
+
+homebtn.addEventListener('click',()=>{
+  home.style.display='flex'
+  form.style.display='none'
+  showMore.style.display= "none"
+  searchResult.style.display='none'
+})
+
+async function GenderFinder(){
+  const url ="https://api.genderize.io?name=";
+  const inputname ='bisrat';
+  const finalurl =url + inputname;
+  const response = await fetch(finalurl);
+  const data = await response.json();
+  
+  const resultgender =document.createElement('h3')
+  console.log(data.gender)
+
+  searchResult.appendChild(gender)
+}
+
+GenderFinder();
