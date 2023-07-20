@@ -7,52 +7,23 @@
 body {
   background: #39297b;
   color:#fff;
-  
 
 }
 
 .container-fluid{
   height: 60px;
   font:bold;
-  font-weight: 40px;
+  font-weight: 400;
   margin-bottom: 20px;
 }
-#homebtn{
-  background: #0d6efd;
-  color: #fff;
-  border: none;
-}
-
-#nav-button{
-  background: #0d6efd;
-  color: #fff;
-  border: none;
-
-}
 
 
-#head {
-  font-family: 'Noto Sans Mono', monospace;
-  font-weight: 800;
-  font-size: 60px;
-  color: #ff3929;
+h1 {
   text-align: center;
-  margin-top: 20px;
-  margin-bottom:  20px;
- 
+  margin-top: 50px;
+  margin-bottom:  50px;
+  font-weight: 600;
 }
-
-P{
-  font-family: 'Noto Sans Mono', monospace;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  line-height: 78px;
-  font-size: 30px;
-  
-}
-
- 
 
 form {
   width:90%;
@@ -63,7 +34,6 @@ form {
   display: flex;
   align-items: center;
   border-radius: 8px;
-  display: none;
 }
 form input{
   flex: 1;
@@ -115,5 +85,38 @@ form button {
   height: 230px;
   object-fit: cover;
   border-radius: 5px;
+}
+/* Media Queries */
 
+@media screen and (max-width: 1200px) {
+    /* Adjust grid columns to 2 on screens up to 1200px */
+    #search-result {
+        grid-template-columns: 1fr 1fr; /* Two columns */
+    }
+}
+
+@media screen and (max-width: 992px) {
+    /* Adjust grid columns to 2 on screens up to 992px */
+    #search-result {
+        grid-template-columns: 1fr 1fr; /* Two columns */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Adjust grid columns to 1 on screens up to 768px */
+    #search-result {
+        grid-template-columns: 1fr; /* Single column */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Adjust grid columns to 1 on screens up to 480px */
+    #search-result {
+        grid-template-columns: 1fr; /* Single column */
+    }
+
+    /* Adjust form width to 100% on screens up to 480px */
+    form {
+        width: 100%; /* Full width */
+    }
 }
