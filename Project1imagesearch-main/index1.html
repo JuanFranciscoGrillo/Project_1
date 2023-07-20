@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link  rel="stylesheet" href="style.css">
+  <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,700&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <title>SearchImage</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" id='isearch'href="#Home">IMAGESEARCH</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        
+      </button>
+      <div class="d-flex flex-row-reverse bd-highlight">
+      <button  id="homebtn">Home</button>
+      <button  id="nav-button">Search Image</button>
+      <a href="./dummy.html" id="nav-button" class="btn btn-primary" style="padding-right: 20px;">Gif Finder</a>
+
+
+      </div>
+        
+    </div>
+  </nav>
+  <h1 id="head">IMAGE SEARCH PROjECT </h1>
+  <div>
+    <p id="Home">
+      This is our image serach project <br>
+      it has two page home and image search <br>
+      in the nav bar when you press imagesearch <br>
+      you go to the image search page <br>
+      it has three content ......... <br>
+      .........................................
+
+    </p>
+  </div>
+  <form id="search-form">
+    <input type="text" id="search-box" placeholder="search..."/>
+    <button>search</button>
+  </form>
+  
+  <div id="search-result"></div>
+  
+   <div class="d-grid gap-2">
+    <button class="btn btn-primary" id="show-more-btn"type="button">showmore</button>
+  </div> 
+  <div id="contact">
+    <ul>
+      <li>JUAN GRILLO ......jfrgm1986@gmail.com</li>
+      <li>MUDDABR MASOOD....muddabirm@gmail.com</li>
+      <li>KHALIL BARRY....khalilb2000@gmail.com</li>
+      <li>BISRAT MENGESHA...zerbisrat@gmail.com</li>
+    </ul>
+  </div>
+  <footer class="foot navbar-expand-lg navbar-dark bg-primary" id="footer">
+    <div class="container-foot">
+    
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <button id="contbtn">CONTACT US  </button>
+        <ul class="navbar-nav " id="footlist">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="https://github.com/Hellobisrat/Project1imagesearch">
+              <img id="img1" src="./image/gitimage.jpg">Github</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"></a>
+          </li>
+          
+        </ul>
+      </div>
+    
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
