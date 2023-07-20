@@ -63,4 +63,9 @@ This is an image search project with two pages: home and image search. The home 
 		VI. The search results will be displayed as GIFs.
 
 7. Screenshot:
-	
+
+	<img src= "assets/images/picture1.png">
+
+	<img src= "assets/images/picture2.png">
+
+	<img src= "assets/images/picture3.png">
